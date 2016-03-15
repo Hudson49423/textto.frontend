@@ -3,7 +3,22 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'textto',
+	podModulePrefix: 'textto/pods',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://textto.firebaseio.com/',
+	torii: {
+		sessionServiceName: 'session'
+	},
+	googleFonts: [
+		'Lobster:400'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
