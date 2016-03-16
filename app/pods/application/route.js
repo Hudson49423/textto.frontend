@@ -8,6 +8,12 @@ export default Ember.Route.extend({
 	actions: {
 		accessDenied: function() {
 			this.transitionTo('login'); 
+		},
+
+		logout: function() {
+			this.get("session").close();
+			this.transitionTo('login');
 		}
+
 	}
 });

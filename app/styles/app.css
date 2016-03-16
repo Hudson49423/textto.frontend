@@ -1,36 +1,21 @@
 body {
-		font-family: 'Roboto+Condensed';
+		font-family: 'Roboto Condensed';
+		background: #eee;
 }
 
-#blue-container {
-		background: #72d1e9;
-		min-height: 100%;
-		height: 100%;
-		position: absolute;
-		width:100%;
-
+.navbar-custom {
+		background-color: #00a8d3;
+		color: white;
+		border-radius: 0;
 }
 
-#logo {
+.navbar-custom .navbar-brand {
+    color:white;
+	font-family: "Lobster";
+	font-size: 2.5em;
+}
+
+.navbar-text {
 		color:white;
-		padding-top:30px;
-		font-family: 'Lobster', cursive;
-		font-size: 5em;
-
-}
-
-.padding-top {
-		padding-top: 50px;
-
-}
-
-.small-padding-top {
-		padding-top: 10px;
-
-}
-
-.error {
-		font-size: 1em;
-		font-style: italic;
-		color:black;
+		font-size: 1.5em;
 }

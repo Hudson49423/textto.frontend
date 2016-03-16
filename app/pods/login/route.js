@@ -10,11 +10,12 @@ export default Ember.Route.extend({
 
 	actions: {
 		login: function() {
+			var route = this
 			this.get('session').open('firebase', {
 				provider: 'google',
 			}).then(function(data) {
 				console.log(data.currentUser);
-				this.transitionTo('index');
+				route.transitionTo('index');
 			}, function(error){
 				console.log(error);
 			});
