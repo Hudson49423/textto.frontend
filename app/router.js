@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.authenticatedRoute('/'); // must be logged in to see index.
   this.route('login');
 });
 

@@ -1,27 +1,8 @@
-<div class="container-fluid" id="login-container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 id="logo" class="text-center">Textto</h1> </div>
-    <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-      <form {{action "login" on="submit"}}>
-        <div class="col-sm-12">
-          <div class="form-group row padding-top">
-            {{input type="email" class="form-control" value=email id='email' placeholder="Email"}}
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="form-group row">
-            {{input type="password" class="form-control" value=password id='password' placeholder="Password"}}
-          </div>
-        </div>
-        <p class="error text-center">{{error}}</p>
-        <div class="col-sm-4 col-sm-offset-4">
-          <button type="submit" class="btn btn-primary btn-block">Login</button>
-        </div>
-        <div class="col-sm-12 small-padding-top">
-          <a href="#"><p class="text-center"><em>Don't have an account? Create One.</em></p></a>
-        </div>
-      </form>
+<div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+  <form {{action "login" on="submit"}}>
+    <p class="error text-center">{{error}}</p>
+    <div class="col-sm-4 col-sm-offset-4">
+      <input type="image" alt="submit" src="/assets/images/btn_google_signin_light_normal_web.png"/>
     </div>
-  </div>
+  </form>
 </div>

@@ -11,7 +11,8 @@ module.exports = function(environment) {
 		sessionServiceName: 'session'
 	},
 	googleFonts: [
-		'Lobster:400'
+		'Lobster:400',
+		'Roboto+Condensed:300'
     ],
 
     // Set or update content security policies

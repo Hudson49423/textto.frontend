@@ -1,4 +1,8 @@
-#login-container {
+body {
+		font-family: 'Roboto+Condensed';
+}
+
+#blue-container {
 		background: #72d1e9;
 		min-height: 100%;
 		height: 100%;
