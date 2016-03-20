@@ -1,49 +1,12 @@
 <nav class="navbar navbar-custom">
-  <div class="container">
-    <div class="navbar-header">
+  <div class="container-fluid">
+    <div class="navbar-header pull-left">
       <a class="navbar-brand" href="#">Textto</a>
     </div>
     <a class="navbar-right navbar-text" {{action "logout"}}>Logout</a>
   </div>
 </nav>
-<div class="container-fluid custom-container">
-  <div class="row">
-		<!--sidebar that lists contacts-->
-    <div class="col-md-3">
-      <div class="well well-sidebar pre-scrollable">
-        <ul class="ul-conversations">
-					<a href="/messages" class="a-text">
-          <div class="well well-conversation">
-						<div class="row">
-							<div class="col-md-8">
-								{{test.name}}
-							</div>
-							<div class="col-md-4">
-								<a href="#">Inbox <span class="badge">{{test.messages.length}}</span></a>
-							</div>
-						</div>
-          </div>
-					</a>
-					<div class="well">
-						<div class="row">
-							<div class="col-md-10">
-								ahsdahs
-							</div>
-							<div class="col-md-2">
-								balsd
-							</div>
-						</div>
-          </div>
-        </ul>
-      </div>
-    </div>
-		<!--end sidebar -->
-		<!--Main area-->
-    <div class="col-md-9">
-      {{outlet}}
-    </div>
-  </div>
-</div>
+{{outlet}}
 <hr class="footer-custom">
 <div class="container">
   <p>© 2016 Hudson Clark Paulo Warren</p>
