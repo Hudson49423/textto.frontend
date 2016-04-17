@@ -1,0 +1,61 @@
+$TTBlue: #26C6DA;
+$TTsidebar: #C7DBE0;
+body {
+  font-family: "Roboto Condensed";
+  background: #eee;
+}
+
+.navbar-custom {
+	padding-left: 8%;
+	padding-right: 5%;
+  background-color: $TTBlue;
+  color: white;
+  border-radius: 0;
+  margin-bottom: 0px;
+
+	.navbar-brand{
+		color: white;
+		font-family: "Lobster";
+		font-size: 2.5em;
+	}
+
+	.navbar-text {
+		color: white;
+		font-size: 1.5em;
+	}
+}
+
+.footer-custom {
+  border-top: 1px solid $TTBlue;
+  margin-top: 0px;
+}
+
+.custom-container {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.well-sidebar {
+  padding: 0px;
+  background: $TTsidebar;
+  min-height: 800px;
+  margin-bottom: 0px;
+}
+
+.well-conversation {
+  margin-bottom: 0px;
+}
+
+.ul-conversation {
+  padding-left: 0px;
+}
+
+.a-text {
+  color: #333;
+}
+
+.contact-name{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+

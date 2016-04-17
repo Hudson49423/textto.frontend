@@ -1,1 +1,19 @@
-{{outlet}}
+<div class="container-fluid custom-container">
+  <div class="row">
+    <!--sidebar that lists contacts-->
+    <div class="col-md-3">
+      <div class="well well-sidebar pre-scrollable">
+        <ul class="ul-conversation">
+					{{#each model as |contact|}}
+						{{contact-message unreadMessages=contact.unread name=contact.name}}
+					{{/each}}
+        </ul>
+      </div>
+    </div>
+    <!--end sidebar -->
+    <!--Main area-->
+    <div class="col-md-9">
+      {{outlet}}
+    </div>
+  </div>
+</div>
